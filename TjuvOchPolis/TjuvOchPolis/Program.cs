@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int medborgare = 30;
+            int tjuvar = 20;
+            int poliser = 10;
+
+            int stadensBredd = 100;
+            int stadensHöjd = 25;
         }
     }
 }

@@ -20,8 +20,8 @@ namespace TjuvOchPolis
         //Starting position
         public Person() 
         {
-            X = rnd.Next(0,100);
-            Y = rnd.Next(0,25);
+            X = rnd.Next(0, 100);
+            Y = rnd.Next(0, 25);
             SetRandomDirection();
         }
 
@@ -40,12 +40,13 @@ namespace TjuvOchPolis
             Y += YDirection;
 
             if (X < 0) X = maxX - 1;
-            if (X >= maxX) X = X - 0;
-            if (Y < 0) X = maxY - 1;
-            if (Y < maxY) X = Y - 0;
+            if (X >= maxX) X = 0;
+
+            if (Y < 0) Y = maxY - 1;
+            if (Y >= maxY) Y = 0;
         }
 
         //Preperation for Persons char id to see on screen
-        public abstract char Symbol(); 
+        public abstract char Symbol();
     }
 }

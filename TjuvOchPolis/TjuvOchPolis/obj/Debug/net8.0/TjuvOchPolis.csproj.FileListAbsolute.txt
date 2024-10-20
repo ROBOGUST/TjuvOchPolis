@@ -1,0 +1,15 @@
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\bin\Debug\net8.0\TjuvOchPolis.exe
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\bin\Debug\net8.0\TjuvOchPolis.deps.json
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\bin\Debug\net8.0\TjuvOchPolis.runtimeconfig.json
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\bin\Debug\net8.0\TjuvOchPolis.dll
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\bin\Debug\net8.0\TjuvOchPolis.pdb
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.AssemblyInfoInputs.cache
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.AssemblyInfo.cs
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.csproj.CoreCompileInputs.cache
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.sourcelink.json
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.dll
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\refint\TjuvOchPolis.dll
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.pdb
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\TjuvOchPolis.genruntimeconfig.cache
+C:\projects\KYH\C#\TjuvOchPolis\TjuvOchPolis\obj\Debug\net8.0\ref\TjuvOchPolis.dll

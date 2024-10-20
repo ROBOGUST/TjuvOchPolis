@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace TjuvOchPolis
 {
-    internal class Item
+    public class Item
     {
+        public string Name { get; set; }
+
+        public Item(string name)
+        {
+            Name = name;
+        }
     }
 }

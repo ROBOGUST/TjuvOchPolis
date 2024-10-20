@@ -52,6 +52,8 @@
 
                 }
 
+                VisaStatistik();
+
                 Thread.Sleep(500);
                 Console.Clear();
             }

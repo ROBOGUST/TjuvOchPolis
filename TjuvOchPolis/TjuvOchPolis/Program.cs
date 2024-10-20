@@ -2,6 +2,8 @@
 {
     internal class Program
     {
+        static int rånadeMedbrogare = 0;
+        static int arresteradeTjuvar = 0;
 
         static void Main(string[] args)
         {
@@ -63,6 +65,7 @@
                     Console.SetCursorPosition(0, 26);
                     Console.WriteLine("Polis tar tjuv!");
                     polis.Arrestera(tjuv);
+                    arresteradeTjuvar++;
                     Thread.Sleep(1000);
                     break;
 
@@ -70,8 +73,10 @@
                     Console.SetCursorPosition(0, 26);
                     Console.WriteLine("Polis tar tjuv!");
                     polis.Arrestera(tjuv);
+                    arresteradeTjuvar++;
                     Thread.Sleep(1000);
                     break;
+
                 case (Tjuv tjuv, Medborgare medborgare):
                     Console.SetCursorPosition(0, 26);
                     Console.WriteLine("Tjuv rånar medborgare!");
@@ -79,6 +84,7 @@
                     if (stulenSak != null)
                     {
                         Console.WriteLine($"Tjuven stal: {stulenSak.Name}");
+                        rånadeMedbrogare++;
                     }
                     Thread.Sleep(1000);
                     break;
@@ -90,6 +96,7 @@
                     if (stulenSak1 != null)
                     {
                         Console.WriteLine($"Tjuven stal: {stulenSak1.Name}");
+                        rånadeMedbrogare++;
                     }
                     Thread.Sleep(1000);
                     break;
@@ -106,38 +113,7 @@
                     Thread.Sleep(1000);
                     break;
 
-            }/*
-            if (person1 is Polis polis && person2 is Tjuv tjuv)
-            {
-                Console.SetCursorPosition(0, 26);
-                Console.WriteLine("Polis tar tjuv!");
-                polis.Arrestera(tjuv);
-                Thread.Sleep(1000);
             }
-            else if (person1 is Tjuv tjuv1 && person2 is Polis polis1) 
-            {
-                Console.SetCursorPosition(0, 26);
-                Console.WriteLine("Polis tar tjuv!");
-                polis1.Arrestera(tjuv1);
-                Thread.Sleep(1000);
-            }
-            if (person1 is Tjuv tjuv2 && person2 is Medborgare medborgare)
-            {
-                Console.SetCursorPosition(0, 26);
-                Console.WriteLine("Tjuv rånar medborgare!");
-                Item stulenSak = tjuv2.StjälFrån(medborgare);
-                if (stulenSak != null)
-                {
-                    Console.WriteLine($"Tjuven stal: {stulenSak.Name}");
-                }
-                Thread.Sleep(1000);
-            }
-            else if (person1 is Medborgare medborgaren && person2 is Polis polisen)
-            {
-                Console.SetCursorPosition(0, 26);
-                Console.WriteLine("Medborgare möter polis, inget händer.");
-                Thread.Sleep(1000);
-            }*/
         }
 
         static void SeStaden(List<Person> personer, int bredd, int höjd)
@@ -156,6 +132,14 @@
                 Console.SetCursorPosition(person.X, person.Y);
                 Console.Write(person.Symbol());
             }
+        }
+
+        static void VisaStatistik()
+        {
+            Console.SetCursorPosition(0, 27);
+            Console.WriteLine($"Antal rånade medborgare: {rånadeMedbrogare}");
+            Console.SetCursorPosition(0, 28);
+            Console.WriteLine($"Antal gripna tjuvar: {arresteradeTjuvar}");
         }
     }
 }

@@ -40,7 +40,7 @@
                     person.Move(stadensBredd, stadensHöjd);
                 }
 
-                fängelse.TjuvenRörSig();
+                fängelse.TjuvenRörSig(personer, stadensBredd, stadensHöjd);
 
                 SeStaden(personer, stadensBredd, stadensHöjd);
 
@@ -131,14 +131,31 @@
                 for (int x = 0; x < bredd; x++)
                 {
                     Console.SetCursorPosition(x, y);
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write('.');
+                    Console.ResetColor();
                 }
             }
 
             foreach (var person in personer)
             {
                 Console.SetCursorPosition(person.X, person.Y);
+
+                if (person is Polis)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+                else if (person is Medborgare)
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                }
+                else if (person is Tjuv)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                }
+
                 Console.Write(person.Symbol());
+                Console.ResetColor();
             }
         }
 

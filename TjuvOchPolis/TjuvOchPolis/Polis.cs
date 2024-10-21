@@ -8,6 +8,13 @@ namespace TjuvOchPolis
 {
     public class Polis : Person
     {
+        private Fängelse fängelse;
+
+        public Polis(Fängelse fängelse)
+        {
+            this.fängelse = fängelse;
+        }
+
         public override char Symbol()
         {
             return 'P';
@@ -20,6 +27,7 @@ namespace TjuvOchPolis
                 Inventory.Add(item);
             }
             tjuv.Inventory.Clear();
+            fängelse.ArresteraTjuv(tjuv);
         }
     }
 }

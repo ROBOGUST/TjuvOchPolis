@@ -14,6 +14,8 @@
             int stadensBredd = 75;
             int stadensHöjd = 25;
 
+            Fängelse fängelse = new Fängelse();
+
             List<Person> personer = new List<Person>();
 
             for (int i = 0; i < medborgare; i++)
@@ -28,7 +30,7 @@
 
             for (int i = 0; i < poliser; i++)
             {
-                personer.Add(new Polis());
+                personer.Add(new Polis(fängelse));
             }
 
             while (true)
@@ -37,6 +39,8 @@
                 {
                     person.Move(stadensBredd, stadensHöjd);
                 }
+
+                fängelse.TjuvenRörSig();
 
                 SeStaden(personer, stadensBredd, stadensHöjd);
 
@@ -53,6 +57,8 @@
                 }
 
                 VisaStatistik();
+
+                fängelse.VisaFängelse();
 
                 Thread.Sleep(500);
                 Console.Clear();

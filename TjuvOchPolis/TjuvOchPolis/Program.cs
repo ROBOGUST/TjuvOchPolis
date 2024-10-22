@@ -8,8 +8,8 @@
         static void Main(string[] args)
         {
             int medborgare = 30;
-            int tjuvar = 30;
-            int poliser = 30;
+            int tjuvar = 20;
+            int poliser = 10;
 
             int stadensBredd = 75;
             int stadensHöjd = 25;
@@ -60,8 +60,7 @@
 
                 fängelse.VisaFängelse();
 
-                Thread.Sleep(500);
-                Console.Clear();
+                Thread.Sleep(200);
             }
         }
 
@@ -134,7 +133,7 @@
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write('.');
                     Console.ResetColor();
-                }
+                }  
             }
 
             foreach (var person in personer)
@@ -161,9 +160,9 @@
 
         static void VisaStatistik()
         {
-            Console.SetCursorPosition(0, 27);
+            Console.SetCursorPosition(0, 29);
             Console.WriteLine($"Antal rånade medborgare: {rånadeMedbrogare}");
-            Console.SetCursorPosition(0, 28);
+            Console.SetCursorPosition(0, 30);
             Console.WriteLine($"Antal gripna tjuvar: {arresteradeTjuvar}");
         }
     }

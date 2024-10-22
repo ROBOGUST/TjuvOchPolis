@@ -34,7 +34,7 @@ namespace TjuvOchPolis
 
                 if (tjuv.Fängelsetid >= maxFängelsetid)
                 {
-                    Console.SetCursorPosition(0, 37);
+                    Console.SetCursorPosition(0, 32);
                     Console.WriteLine("Tjuv släpps från fängelse!");
 
                     tjuv.X = new Random().Next(0, stadensBredd);
